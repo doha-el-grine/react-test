@@ -1,0 +1,42 @@
+/* GAME.css */
+
+/* Set a dark background */
+body {
+   background-color: #000;
+ }
+ 
+ /* Neon text effect for the game title */
+ .game-title {
+   font-family: "Arial", sans-serif;
+   font-size: 36px;
+   color: #ff00ff; /* Neon pink color */
+   text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+ }
+ 
+ /* Neon glow effect for buttons */
+ .play-button,
+ .replay-button {
+   background-color: #000;
+   color: #ff00ff;
+   border: 2px solid #ff00ff;
+   padding: 10px 20px;
+   margin: 10px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   text-transform: uppercase;
+ }
+ 
+ .play-button:hover,
+ .replay-button:hover {
+   background-color: #ff00ff;
+   color: #000;
+   text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+ }
+ 
+ /* Neon glow effect for success message */
+ .success-message {
+   color: #00ff00; /* Neon green color */
+   font-weight: bold;
+   text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+ }
+ 
