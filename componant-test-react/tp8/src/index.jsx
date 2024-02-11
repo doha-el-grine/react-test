@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Inscription from './App';
+import App from './App';
+import Add from './add';
 
 
 
@@ -8,7 +9,12 @@ import Inscription from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Inscription />
+    <App />
+    <Add/>
+
+
+
+
   </React.StrictMode>
 );
 
