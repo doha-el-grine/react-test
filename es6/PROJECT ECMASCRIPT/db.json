@@ -1,9 +1,30 @@
-{
-   "student" : [{
-      "id" : 1,
-      "name" : "DOUHA",
-      "date_born" : "2003/08/22",
-      "note" : 18
 
-   }]
-}
+{
+   "Student": [
+     {
+       "id": 1,
+       "name": "Jamaoui",
+       "date": "2005-08-15",
+       "note": 18
+     },
+     {
+       "name": "Salima Salimi",
+       "date": "2020-08-15",
+       "note": 9,
+       "id": 3
+     },
+     {
+       "name": "Salma",
+       "date": "2002-02-15",
+       "note": 5,
+       "id": 4
+     },
+     {
+      "name": "Salma",
+       "date": "2002-02-15",
+       "note": 5,
+       "id": 4
+
+   }
+   ]
+ }

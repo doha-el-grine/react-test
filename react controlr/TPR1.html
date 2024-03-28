@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+Articles= [
+{id:100,nom:'PC',QtEnS:25},
+{id:101,nom:'tablet',QtEnS:215},
+{id:104,nom:'SMART',QtEnS:35}, 
+{id:106,nom:'TV',QtEnS:45}
+];
+//1-Ajouter un article 
+const ajouter= (pos,article)=>{ Articles.splice(pos,0,article)}
+ajouter(1,{id:99,nom:'tel',QtEnS:20})
+//console.log(Articles)
+
+//2-supprimer un article par sa position  
+const supprimer= (pos)=>{ Articles.splice(pos,1)}
+supprimer(3)
+//console.log(Articles)
+
+//3- de supprimer un article par son id 
+
+const supprimerArt=(IdSup)=>{Articles=Articles.filter(function(art){return art.id !== IdSup})}
+supprimerArt(106)
+console.log(Articles)
+
+
+//4-modifier  un article 
+
+const modifier = (pos,article)=>{Articles.splice(pos,1,article)}
+modifier(1,{id:101,nom:'tv',QtEnS:200})
+//console.log(Articles)
+
+</script>
+</body>
+</html>

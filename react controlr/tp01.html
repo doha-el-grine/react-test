@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<P id="id1"></P>
+    <script>
+         class Personne{
+            constructor(numero,nom,ville ,age ){
+this.numero=numero;
+this.nom=nom;
+this.ville=ville;
+this.age=age;
+            }
+info(){
+    return `la personne numéro : ${this.numero} le nom est : ${this.nom} a pour age ${this.age} ans habite a la ville ${this.ville}`
+}
+
+}
+         let P1=new Personne(150,"ALIOUI ahmed","FES",21)
+         console.log(P1.info())
+         let P2=new Personne(211,"NAJJI AHLAM","RABAT",22)
+         console.log(P2.info())
+         document.getElementById("id1").innerHTML=P1.info();
+    </script>
+    </body>
+    </html>

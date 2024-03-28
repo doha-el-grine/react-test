@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<P id="id1"></P>
+<script  >
+//1.créer une fonction Arrow permet d’ajouter un article dans une position donnée en paramètres (utiliser  la méthode splice())
+    
+Articles= [
+{id:100,nom:'PC',QtEnS:25}, {id:101,nom:'tablet',QtEnS:215},
+{id:104,nom:'SMART',QtEnS:35}, {id:106,nom:'TV',QtEnS:45}
+];
+ const ajout=(Art,pos)=>Articles.splice(pos,0,Art)
+ //ajout({id:103,nom:'Table',QtEnS:40},2)
+  //2.	créer une fonction Arrow permet de supprimer un article par sa position  
+  const suppArt=(pos)=>Articles.splice(pos,1)
+  //suppArt(1)
+  
+  //3.	créer une fonction Arrow permet de supprimer un article par son id 
+  
+  const suppArtParId=(idsupp)=>{
+    const possup=Articles.findIndex(function(obj){ obj.id==idsupp})
+    Articles.splice(possup,1)
+   //return [... Articles.filter((obj)=>obj.id!=idsupp)]
+   }
+   // suppArtParId(101)
+
+  const modifier=(idmod,nom,qt)=>{
+    
+    Articles= [...Articles.filter((obj)=>obj.id!=idmod),{id:idmod,nom:nom,QtEnS:qt}]
+    
+  }
+  modifier(104,"SAMART2",100)
+  console.log(Articles)
+
+    </script>
+    </body>
+    </html>

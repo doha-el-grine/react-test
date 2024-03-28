@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<body>
+<P id="id1"></P>
+<script  >
+/*
+var a=201
+var b=30
+let max=a>b?a:b;
+        
+let isMember=false;
+let remise=isMember==true?0.2:0.1
+
+
+let nom="Naciri";
+let salutation=nom?`salut ${nom}` :"inconnu"
+
+        // console.log(salutation)
+        // document.getElementById("id1").innerHTML=salutation
+
+         const etudiant={
+            numero:105,nom:"FATIHI",ville:"fes",age:"21",notes:{M01:15,M02:17.5,M03:18}
+        }
+        console.log(etudiant.numero,etudiant.nom,etudiant.ville,etudiant.age,etudiant.notes.M01) 
+        console.log(`${etudiant.numero} ${etudiant.nom}`) */
+        const Tetudiants=[
+            {numero:105,nom:"FATIHI",ville:"fes",age:"21",IsMenber:true},
+            {numero:110,nom:"TAKKI",ville:"RABAT",age:"25",IsMenber:true},
+            {numero:205,nom:"OUAFI",ville:"fes",age:"18",IsMenber:false},
+            {numero:455,nom:"RAHMANI",ville:"MEKNES",age:"23",IsMenber:true},
+            {numero:308,nom:"TADLAOUI",ville:"RABAT",age:"27",IsMenber:false},
+            {numero:301,nom:"RAMI",ville:"fes",age:"30",IsMenber:false}
+        ]
+
+        //afficher les etudiant habite a la ville fes qui ont age sup a 22 ans de l
+
+        TAGE=Tetudiants.filter(function(etu){
+          return  etu.age>22 && etu.ville=="fes"
+        })
+       // console.log(TAGE)
+TNoms=Tetudiants.filter(function(et){ return et.IsMenber==true}).map(function(etu){
+   return etu.nom
+})
+
+//console.log(TNoms)
+
+//afficher etudiants qui habite a la ville RABAT
+ TEtudville=Tetudiants.find(function(etud){ return etud.ville=="RABAT"})
+ //console.log(TEtudville)
+ const clients = [
+{ nom: "Rami", montant: 120 },
+{ nom: "Karimi", montant: 80 },
+{ nom: "Chaouki", montant: 35},
+{ nom: "Ramoun", montant: 40 },
+];
+const sommeT=clients.reduce(function(total,cli){
+ return   total=total+cli.montant;
+},20)
+//console.log(sommeT);
+
+let numbers=[10, 20, 30, 40, 50]
+const [a, b,c,...rest] = numbers;
+//console.log(a,b,c,rest);
+
+let x=10;
+let y=20;
+let z=30;
+[x,y,z]=[y,z,x]
+console.log("x=",x," y=",y,"z=",z)
+
+    </script>
+    </body>
+    </html>
